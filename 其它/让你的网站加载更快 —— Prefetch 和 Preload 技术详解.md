@@ -1,4 +1,14 @@
-# 让你的网站加载更快 —— Prefetch 和 Preload 技术详解
+**当学习成为了习惯，知识也就变成了常识。** 感谢各位的 **关注**、**点赞**、**收藏**和**评论**。
+
+新视频和文章会第一时间在微信公众号发送，欢迎关注：[李永宁lyn](https://gitee.com/liyongning/typora-image-bed/raw/master/202202171742614.jpg)
+
+文章已收录到 [github 仓库 liyongning/blog](https://github.com/liyongning/blog)，欢迎 Watch 和 Star
+
+**[更多精彩内容](https://github.com/liyongning/blog/blob/main/README.md)**
+
+<hr />
+
+# 简介
 
 prefetch 和 preload 是浏览器提供的两种资源预加载技术，它们可以预先请求浏览器可能需要的资源，并将这些资源缓存到本地，以便在页面需要时能够更快地获取，从而显著提高网站性能，优化用户体验。这些资源可以是文本文件、图像、音频或视频等各种类型的文件。
 
@@ -11,7 +21,7 @@ prefetch 和 preload 之间的主要区别在于:
 * prefetch 利用浏览器的空闲时间，预加载将来可能会被用户访问到的资源，由于是利用浏览器的空闲时间，所以它不会影响当前页的加载性能，当然也不保证预加载的资源一定会被提前缓存，假如浏览器一直很忙
 * preload 用于预加载即将被使用的资源，被标记为 preload 的资源会被优先加载，也就是说它会保证预加载的资源在使用前一定会被提前缓存到本地，所以，如果使用不当，它会影响当前页的加载性能
 
-## prefetch
+# prefetch
 
 prefetch 可以帮助浏览器在页面加载之前预取用户可能需要的资源，以加快网站的整体加载速度。这些资源包括但不限于图像、脚本和样式表。
 
@@ -31,7 +41,7 @@ Link: <example.js>; rel="prefetch"
 
 值得注意的是，prefetch 并不保证资源的加载顺序或加载时间，也不保证在需要使用之前资源一定会被缓存，因为 prefetch 是在浏览器空闲时间工作，所以如果浏览器一直忙，prefetch 的资源就没机会被加载。
 
-## preload
+# preload
 
 preload 是一种更为复杂的资源预加载技术，它可以在页面加载时预取即将被使用的资源，以加快页面的渲染速度。这些资源包括但不限于图像、脚本和样式表。
 
@@ -49,7 +59,7 @@ Link: <example.js>; rel="preload"; as="script"
 
 与 prefetch 不同，preload 可以确保资源的加载顺序和时间，并且这些资源在使用前一定会被缓存。但是，preload 也需要谨慎使用，因为标有 preload 的资源会被优先加载，因此它可能会影响页面的加载性能。如果您的网站中有大量资源需要预加载，可能会影响页面的渲染速度。
 
-## as 属性
+# as 属性
 
 在使用 <link rel="preload"> 标签时，as 属性用于指定预加载资源的类型。它告诉浏览器如何处理预加载的资源，并在加载过程中进行优化。以下是一些常见的as属性值：
 
@@ -67,7 +77,7 @@ Link: <example.js>; rel="preload"; as="script"
 
 > 经过实际测试，发现 preload 不使用 as 属性，观看 network 面板中资源的加载顺序，看起来 preload 像失效了，而且有时候浏览器的 console 会给出告警。
 
-## 实战
+# 实战
 
 下面我们将通过一个示例来演示 prefetch 和 preload 的相关知识点：
 
@@ -114,7 +124,16 @@ Link: <example.js>; rel="preload"; as="script"
 
 <img width="1536" alt="image" src="https://user-images.githubusercontent.com/26913352/232323297-43b87e61-d5b3-4d41-ac18-f8e388a5f2a0.png">
 
-## 总结
+# 总结
 
 prefetch 和 preload 是两种非常有用的资源预加载技术，可以显著提高网站性能并优化用户体验。使用 prefetch 可以帮助浏览器预取将来可能会被用户访问到的资源，而使用 preload 可以预加载即将被使用的资源。在使用这些技术时，我们需要注意谨慎使用，确保只预加载可能会被用户使用的资源，从而并避免过度预加载导致性能问题。
 
+<hr />
+
+**当学习成为了习惯，知识也就变成了常识。** 感谢各位的 **关注**、**点赞**、**收藏**和**评论**。
+
+新视频和文章会第一时间在微信公众号发送，欢迎关注：[李永宁lyn](https://gitee.com/liyongning/typora-image-bed/raw/master/202202171742614.jpg)
+
+文章已收录到 [github 仓库 liyongning/blog](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
+
+**[更多精彩内容](https://github.com/liyongning/blog/blob/main/README.md)**

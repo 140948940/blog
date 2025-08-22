@@ -2,13 +2,9 @@
 
 避免失联，先点 Star。如果内容对你有帮助也欢迎将仓库分享给你的同伴，更欢迎成为仓库贡献者，成为开源项目的 Contributor。
 
-## 为什么要有这个仓库？
+## 简介
 
-最开始用来作为自己的私人博客仓库，仓库中的博文会发布到各大技术平台和 B 站，B 站以视频形式分享。现在打算将仓库开源，接受网友的投稿，所以仓库内容会分为两部分：一部分为我自己的技术分享，一部分内容来源于网友投稿。投稿方式看[贡献指南](https://github.com/liyongning/blog/blob/45bb1cbf93f2813126ac3419ad0ea9ce93ab9176/.github/CONTRIBUTING.md)。
-
-## 仓库的主要内容是？
-
-仓库目前主要以前端知识为主，比如基础知识、最佳实践、源码原理、面经等，内容必须为精品（我的主观评价，如有误伤，还请见谅），后续可能会陆续增加其它内容。
+一个能让你升 P7 的仓库，框架源码原理分析（比如 Vue、微前端、组件库等）、业界最佳实践等
 
 ## 贡献指南
 
@@ -71,6 +67,13 @@
 
 * [思维导图 + 文字 = 让你一次性学会正则表达式](https://github.com/liyongning/blog/issues/31)
 * [在线主题切换](https://github.com/liyongning/blog/issues/32)
+* [如何使用 axios 实现前端并发限制和重试机制](https://github.com/liyongning/blog/issues/34)
+* [让你的网站加载更快 —— Prefetch 和 Preload 技术详解](https://github.com/liyongning/blog/issues/33)
+* [一文搞透文件上传](https://github.com/liyongning/blog/issues/49)
+* [开发环境配置安全的 HTTPS 协议](https://github.com/liyongning/blog/issues/50)
+* [听说你面试想作弊？浏览器做切屏检测](https://github.com/liyongning/blog/issues/51)
+* [浏览器路由拦截器 —— 优雅监听前端路由变化](https://github.com/liyongning/blog/issues/52)
+* [AI 编辑器 + MCP 轻松实现设计稿生成前端代码](https://github.com/liyongning/blog/issues/53)
 
 ## 博客主页
 
